@@ -1,0 +1,186 @@
+@media (max-width:2560px){
+    #articles {
+        margin-left: 23.4%;
+        width: 51.6%;
+    }
+    #articles article{
+        margin-left: 6%;
+    }
+}
+@media (max-width:1920px){
+    #articles{
+        width: 63.5%;
+        margin-left: 17.6%;
+    }
+    #articles article{
+        margin-left: 5.5%;
+    }
+}
+
+@media (max-width:1242px){
+    .wrap{
+        width:100%;
+    }
+    #cards{
+        margin-left: 1.5%;
+    }
+    #cards .card{
+        width: 15%;
+        margin-left: 2.5%;
+    }
+}
+
+@media (max-width:899px) {
+    #header #logo{
+        width: 155px;
+        margin-top: 10px;
+    }
+    #header #logo .gear{
+        font-size: 25px;
+        margin: 0 auto;
+        padding-left:  10%;
+    }
+    #header #logo h3{
+        font-size: 30px;
+        margin: 0 auto;
+        padding-right: 10%;
+    }
+    #cards .card{
+        width: 16.9%;
+        margin-left: .5%;
+    }
+    #articles .data {
+        float: none;
+        height: 30px;
+        line-height: 30px;
+        margin: -10px;
+        border-radius: 0px 0px 0px 0px;
+    }
+    #articles article{
+        margin-left: 3%;
+    }
+    #articles article h4{
+        margin-top: 20px;
+    }
+}
+
+@media (max-width:775px){
+    #header{
+        height: 200px;
+    }
+    #header .wrap{
+        padding-top: 20px;
+    }
+    #header #logo{
+        margin: 0px auto;
+        float: none;
+        padding: 20px 0px 20px 0px;
+    }
+    #header #menu{
+        float: none;
+        text-align: center;
+        padding-top: 20px;
+    }
+    
+    #cards .card{
+        width: 16%;
+        margin: 1.45%;
+        height: auto;
+    }
+    .card .category{
+        font-size: 15px;
+    }
+    .card .description{
+        display: none;
+    }
+    #banner{
+        text-align: center;
+    }
+    #banner h1{
+        font-size: 40px;
+        width: auto;
+        margin: 0;
+        line-height: 100px;
+    }
+    #articles{
+        width: 80%;
+        margin-left: 8%;
+    }
+    #aritcles h2{
+        width: 100%;
+    }
+    #footer .wrap{
+        width: 100%;
+    }
+    #footer #autor{
+        width: 50%;
+        line-height: 45px;
+    }
+    #footer #contact-footer{
+        width: auto;
+    }
+    #footer #contact-footer img{
+        width: 30px;
+        margin-top: 33px;
+    }
+}
+
+@media (max-width:585px){
+    /* #header .wrap{
+        margin: 0;
+        padding: 0;
+    }
+    #header #logo{
+        float: left;
+        margin-top: 70px;
+        padding: 0 0 0 0;
+    } */
+    #menu{
+        height: 100px;
+        line-height: 100px;
+    }
+    #menu ul li {
+        font-size: 18px;
+        margin: 0 10px 0 10px;
+        letter-spacing: 1px;
+        text-decoration: none;
+        display: inline-block;
+    }
+}
+
+@media (max-width:416px) {
+    #menu ul li {
+        /* width: 15%; */
+        font-size: 18px;
+        margin: 0 2px 0 2px;
+    }
+    #banner h1{
+        font-size: 25px;
+    }
+    #cards .card .icon{
+        font-size: 30px;
+    }
+
+    #articles h2{
+        font-size: 30px;
+    }
+    #articles article{
+        margin-left: 1.5%;
+    }
+    #footer #logo-footer img{
+        width: 50px;
+        height: 50px;
+        padding-top: 20px;
+    }
+    #footer #autor{
+        width: auto;
+        margin: 0px 0% 0px 5%;
+    }
+    #footer #autor h5,
+    #footer #autor p{
+        font-size: 20px;
+    }
+    #footer #contact-footer h5{
+        font-size: 25px;
+    }
+}

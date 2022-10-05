@@ -1,0 +1,420 @@
+/*
+1ER GRADIENTE
+    #FE1616
+    #FE019C
+  
+2DO GRADIENTE
+    #004AA9
+    #00979C
+
+3ER GRADIENTE
+    #FFEB00
+    #FF7300   
+
+4TO GRADIENTE
+    #FE7200
+    #FE1614
+
+5TO GRADIENTE
+    #FE019C 
+  
+    #A128C3
+
+6TO GRADIENTE
+    #A12AC4
+    #0049AC
+*/
+/* FUENTES */
+@font-face{
+    font-family: "TrebuchetMS";
+    src: url(fonts/TrebuchetMS.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: "BebasNeue";
+    src: url(fonts/BebasNeue.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "WebSymbolsRegular";
+    src: url('fonts/websymbols-regular-webfont.eot');
+    src: url('fonts/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/websymbols-regular-webfont.woff') format('woff'),
+         url('fonts/websymbols-regular-webfont.ttf') format('truetype'),
+         url('fonts/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ESTILOS GENERALES */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    background: url("../img/pattern.png");
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+.wrap{
+    width: 1250px;
+    margin: 0px auto;
+}
+
+.gear, .icon{
+    font-family: "WebSymbolsRegular";
+}
+
+/* CABECERA */
+#header{
+    width: 100%;
+    height: 70px;
+    background: rgb(254,22,22);
+    background: radial-gradient(circle, rgba(254,22,22,1) 0%, rgba(254,1,156,1) 100%);
+    /* background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%); */
+    /* background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(170,255,255,1) 100%); */
+    font-family: "BebasNeue";
+    color: #f0f0ef;
+}
+
+#logo{
+    float: left;
+    width: 200px;
+    /* background-color: #f4e891; */
+    text-align: center;
+    border: 2.5px solid #FFFFFF;
+    margin: 8px 0px 0px 20px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 300ms;
+}
+#logo .gear{
+    display: block;
+    float: left;
+    font-size: 30px;
+    margin: 8px 0px 0px 26px;
+    animation-name: rotate-gear;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#logo h3{
+    display: block;
+    float: right;
+    font-size: 40px;
+    margin-top: 5px;
+    margin-right: 35px;
+    transition: all 500ms;
+}
+
+#logo:hover{
+    border: 5px groove #FFFFFF;
+    margin-top: 3px;
+}
+
+/* AAAAAA */
+#menu{
+    float: right;
+    height: 70px;
+    overflow: hidden;
+    background: transparent;
+}
+#menu ul li{
+    font-size: 24px;
+    margin: 0 20px 0 20px;
+    line-height: 70px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#menu ul li a{
+    display: block;
+    text-decoration: none;
+    color: #f0f0ef;
+    cursor: pointer;
+    transition: all 500ms;
+}
+#menu ul li a:hover{
+    transform: scale( 1.2, 1.2);
+    text-decoration: underline;
+    letter-spacing: 3px;
+}
+/* #3c0012 */
+/* #0f3b6b */
+
+#banner{
+    width: 95.7%;
+    height: 100px;
+    margin: 20px auto;
+    /* margin-left: 2px; */
+    border: 10px solid #FFFFFF;
+    box-shadow: 0px 0px 2px #808080;
+    overflow: hidden;
+    /* background: url(../img/backbanner-e.png); */
+    background: rgb(254,1,156);
+    background: -moz-radial-gradient(circle, rgba(254,1,156,1) 0%, rgba(161,40,195,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(254,1,156,1) 0%, rgba(161,40,195,1) 100%);
+    background: radial-gradient(circle, rgba(254,1,156,1) 0%, rgba(161,40,195,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fe019c",endColorstr="#a128c3",GradientType=1);
+    animation: backBanner 6.5s linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes backBanner{
+    0%{
+        background-position: -500px 0px;
+    }
+    50%{
+        background-position: 510px 0px;
+    }
+    100%{
+        background-position: -400px 0px;
+    }
+}
+
+
+#banner h1{
+    display: block;
+    width: 850px;
+    font-family: "BebasNeue";
+    font-weight: normal;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 45px;
+    letter-spacing: 3px;
+    margin: 27px auto;
+    text-shadow: 2px 2px 1px #000000;
+}
+#cards .card{
+    box-shadow: 0px 1px 1px #ccc, 0px 2px 2px #ccc, 0px 3px 3px;
+}
+.card{
+    float: left;
+    width: 205px;
+    height: 305px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 2px #ddd;
+    background: #FFFFFF;
+    overflow: hidden;
+    margin: 22px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+.card:last-child{
+    margin-right: 0;
+}
+
+.card .icon{
+    display: block;
+    width: 100%;
+    height: 130px;
+    font-size: 50px;
+    line-height: 110px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.card .category{
+    width: 100%;
+    height: 50px;
+    font-family: "TrebuchetMS";
+    font-size: 21x;
+    font-weight: bold;
+    text-align: center;
+    color: #FF7300;
+    letter-spacing: 1px;
+}
+
+.card .description{
+    font-family: "TrebuchetMS";
+    text-align: center;
+}
+
+/* ARTICULOS */
+#articles{
+    margin-left: 332px;
+    width: 63.6%;
+    margin-top: 50px;
+}
+
+#articles h2{
+    display: block;
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: "BebasNeue";
+    font-size: 40px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    background: url(../img/pxgray.png) #FFFFFF;
+    background: rgb(0,74,169);
+    background: -moz-linear-gradient(180deg, rgba(0,74,169,1) 0%, rgba(0,151,156,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(0,74,169,1) 0%, rgba(0,151,156,1) 100%);
+    background: linear-gradient(180deg, rgba(0,74,169,1) 0%, rgba(0,151,156,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#004aa9",endColorstr="#00979c",GradientType=1);
+    text-transform: uppercase;
+    box-shadow: 0px 1px 0px #393d3f, 1px 2px 0px #393d3f, 2px 3px 0px #393d3f;
+}
+
+#articles article{
+    width: 90%;
+    height: auto;
+    border: 1px solid #ccc;
+    margin: 40px auto;
+    padding: 10px;
+    font-family: "TrebuchetMS";
+    background: #FFFFFF;
+    color: #000000;
+    box-shadow: 1px 1px 2px #ddd;
+}
+
+#articles article h4{
+    display: block;
+    font-size: 23px;
+    font-size: 23px;
+    margin: 3px;
+}
+
+#articles article h4 a{
+    text-decoration: none;
+    color: #00538c;
+    transition: all 500ms;
+}
+#articles article h4 a:hover{
+    text-decoration: underline;
+}
+
+#articles .data{
+    float: right;
+    background: #393d3f;
+    color: #FFFFFF;
+    height: 30px;
+    line-height: 30px;
+    margin: -10px;
+    padding: 4px;
+    font-size: 13px;
+    border-radius: 0px 0px 0px 5px;
+}
+
+#articles .data span{
+    margin: 6px;
+}
+
+#articles article p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+#blog{
+    height: 100px;
+    margin-top: 60px;
+    line-height: 100px;
+    text-align: center;
+    transition: all 300ms;
+}
+
+#blog a{
+    display: block;
+    font-family: "BebasNeue";
+    font-size: 40px;
+    letter-spacing: 3px;
+    color: #FFFFFF;
+    text-decoration: none;
+    background: rgb(254,22,22);
+    background: -moz-radial-gradient(circle, rgba(254,22,22,1) 0%, rgba(254,1,156,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(254,22,22,1) 0%, rgba(254,1,156,1) 100%);
+    background: radial-gradient(circle, rgba(254,22,22,1) 0%, rgba(254,1,156,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fe1616",endColorstr="#fe019c",GradientType=1);
+    transition: all 700ms;
+}
+
+#blog a:hover{
+    font-size: 45px;
+    letter-spacing: 4px;
+    color: #393d3f;
+    text-decoration: underline;
+}
+
+#footer{
+    width: 100%;
+    height: 100px;
+    background: #000000;
+    overflow: hidden;
+}
+
+#footer .wrap{
+    width: 90%;
+    height: 100px;
+    font-family: "BebasNeue";
+}
+
+#footer .wrap div{
+    float: left;
+}
+
+#footer #logo-footer img{
+    width: 90px;
+    height: 90px;
+    padding-top: 5px;
+}
+#footer #logo-footer{
+    width: 20%;
+    text-align: center;
+}
+
+
+#footer #autor{
+    width: 60%;
+    height: 100px;
+    line-height: 60px;
+    color: #FFFFFF;
+    text-align: center;
+}
+#footer #autor h5{
+    font-size: 30px;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+#footer #autor p{
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: normal;
+}
+
+
+#footer #contact-footer{
+    width: 19.6%;
+    color: #FFFFFF;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+#footer #contact-footer h5{
+    float: left;
+    letter-spacing: 1px;
+    font-size: 30px;
+    font-weight: normal;
+    margin: 0px 10px 0px 20px;
+}
+#footer #contact-footer img{
+    width: 40px;
+    background: transparent;
+    margin-top: 29px;
+}
+
